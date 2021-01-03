@@ -1,0 +1,6 @@
+
+A stream is a collection of objects (just as JSON objects) which will be loaded onto memory only on demand.
+This means that our data loader is loading data “lazily”, i.e, only when needed.
+
+This relaxes the memory requirement when working with large files. The content of the stream is stored in a temporary buffer,
+which makes it possible to deal with gigabytes of JSON files!
